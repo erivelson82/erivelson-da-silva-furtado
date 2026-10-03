@@ -3,10 +3,6 @@
 
 <head>
 
-    <!-- =====================================================
-         CONFIGURAÇÕES
-    ====================================================== -->
-
     <meta charset="UTF-8">
 
     <meta
@@ -28,11 +24,6 @@
         Bernardo 4 Anos | Vingadores LEGO
     </title>
 
-
-    <!-- =====================================================
-         CSS
-    ====================================================== -->
-
     <link
         rel="stylesheet"
         href="style.css"
@@ -45,14 +36,71 @@
 
 
     <!-- =====================================================
+         TELA DE ABERTURA
+    ====================================================== -->
+
+    <section
+        class="abertura"
+        id="abertura"
+    >
+
+        <div class="abertura-conteudo">
+
+            <div class="abertura-icon">
+                ⚡
+            </div>
+
+            <p class="abertura-alerta">
+                ATENÇÃO, HERÓI!
+            </p>
+
+            <h1 class="abertura-titulo">
+                VOCÊ FOI<br>
+                CONVOCADO!
+            </h1>
+
+            <p class="abertura-texto">
+
+                Uma missão especial está
+                prestes a começar.
+
+            </p>
+
+            <p class="abertura-subtexto">
+
+                Prepare-se para uma aventura
+                inesquecível!
+
+            </p>
+
+            <button
+                class="btn-entrar"
+                type="button"
+                onclick="entrarNaMissao()"
+            >
+
+                🚀 ENTRAR NA MISSÃO
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
          CONVITE
     ====================================================== -->
 
-    <main class="convite">
+    <main
+        class="convite"
+        id="convite"
+    >
 
 
         <!-- =================================================
-             HERO / TELA PRINCIPAL
+             HERO
         ================================================== -->
 
         <section
@@ -64,26 +112,21 @@
                 VINGADORES
             </div>
 
-
             <p class="chamada">
                 UMA NOVA AVENTURA VAI COMEÇAR!
             </p>
-
 
             <h1>
                 BERNARDO
             </h1>
 
-
             <div class="idade">
                 4
             </div>
 
-
             <h2>
                 ANOS
             </h2>
-
 
             <p class="mensagem">
 
@@ -92,7 +135,6 @@
                 missão muito especial!
 
             </p>
-
 
             <button
                 class="btn-confirmar"
@@ -109,7 +151,7 @@
 
 
         <!-- =================================================
-             SEÇÃO DA MISSÃO
+             MISSÃO
         ================================================== -->
 
         <section
@@ -119,16 +161,13 @@
 
             <div class="missao-conteudo">
 
-
                 <span class="missao-icon">
                     🦸
                 </span>
 
-
                 <h2>
                     UMA MISSÃO ESPECIAL!
                 </h2>
-
 
                 <p>
 
@@ -137,7 +176,6 @@
                     comemorar uma data muito especial.
 
                 </p>
-
 
                 <p>
 
@@ -153,16 +191,13 @@
 
 
         <!-- =================================================
-             INFORMAÇÕES DA FESTA
+             INFORMAÇÕES
         ================================================== -->
 
         <section
             class="informacoes"
             id="informacoes"
         >
-
-
-            <!-- DATA -->
 
             <div class="info">
 
@@ -185,9 +220,6 @@
             </div>
 
 
-
-            <!-- HORÁRIO -->
-
             <div class="info">
 
                 <span>
@@ -208,9 +240,6 @@
 
             </div>
 
-
-
-            <!-- LOCAL -->
 
             <div class="info">
 
@@ -233,9 +262,6 @@
             </div>
 
 
-
-            <!-- BOTÃO MAPA -->
-
             <a
                 class="btn-localizacao"
                 href="#"
@@ -247,13 +273,12 @@
 
             </a>
 
-
         </section>
 
 
 
         <!-- =================================================
-             CONTAGEM REGRESSIVA
+             CONTADOR
         ================================================== -->
 
         <section
@@ -265,11 +290,8 @@
                 ⏳ A MISSÃO COMEÇA EM
             </h2>
 
-
             <div id="countdown">
-
                 Carregando...
-
             </div>
 
         </section>
@@ -301,10 +323,7 @@
          JAVASCRIPT
     ====================================================== -->
 
-    <script
-        src="script.js"
-    ></script>
-
+    <script src="script.js"></script>
 
 </body>
 
