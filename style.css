@@ -1,18 +1,580 @@
-/* ==========================================
+/* =========================================================
+   CONVITE BERNARDO 4 ANOS
+   TEMA: VINGADORES LEGO
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #07152f;
+
+    color: #ffffff;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
+.convite {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HERO / TELA PRINCIPAL
+   ========================================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(3, 12, 35, 0.82),
+            rgba(3, 12, 35, 0.96)
+        ),
+        url("assets/images/background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* efeito de brilho */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(255, 212, 0, 0.10);
+
+    border-radius: 50%;
+
+    filter: blur(50px);
+
+    top: 10%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 20px;
+
+    font-size: 34px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    color: #ffd400;
+
+    text-shadow:
+        4px 4px 0 #d00000,
+        7px 7px 0 rgba(0, 0, 0, 0.5);
+
+    animation: aparecer 0.8s ease;
+}
+
+
+/* =========================================================
+   CHAMADA
+   ========================================================= */
+
+.chamada {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    animation: aparecer 1s ease;
+}
+
+
+/* =========================================================
+   NOME
+   ========================================================= */
+
+h1 {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 58px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: #ffd400;
+
+    text-shadow:
+        4px 4px 0 #d71920,
+        8px 8px 0 rgba(0, 0, 0, 0.45);
+
+    animation: nomeEntrando 1s ease;
+}
+
+
+/* =========================================================
+   IDADE
+   ========================================================= */
+
+.idade {
+    position: relative;
+
+    z-index: 2;
+
+    width: 125px;
+
+    height: 125px;
+
+    margin: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: #d71920;
+
+    border: 6px solid #ffd400;
+
+    font-size: 72px;
+
+    font-weight: 900;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 0 #8c0000,
+        0 12px 25px rgba(0, 0, 0, 0.35);
+
+    animation: pulso 2s infinite;
+}
+
+
+/* =========================================================
+   ANOS
+   ========================================================= */
+
+.hero h2 {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+
+    color: #ffffff;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   MENSAGEM
+   ========================================================= */
+
+.mensagem {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+
+    font-size: 17px;
+
+    color: #f2f2f2;
+}
+
+
+/* =========================================================
+   BOTÃO CONFIRMAR
+   ========================================================= */
+
+.btn-confirmar {
+    position: relative;
+
+    z-index: 2;
+
+    border: none;
+
+    padding: 18px 30px;
+
+    background: #ffd400;
+
+    color: #111111;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 0 #a87900,
+        0 12px 20px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.btn-confirmar:hover {
+    transform: translateY(4px);
+
+    box-shadow:
+        0 3px 0 #a87900,
+        0 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.btn-confirmar:active {
+    transform: translateY(7px);
+
+    box-shadow:
+        0 0 0 #a87900;
+}
+
+
+/* =========================================================
+   SEÇÃO MISSÃO
+   ========================================================= */
+
+.missao {
+    position: relative;
+
+    padding: 65px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d71920,
+            #a90008
+        );
+
+    overflow: hidden;
+}
+
+
+.missao::before,
+.missao::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+
+    height: 100px;
+
+    background: rgba(255, 212, 0, 0.15);
+
+    transform: rotate(25deg);
+}
+
+
+.missao::before {
+    top: -30px;
+
+    left: -20px;
+}
+
+
+.missao::after {
+    bottom: -30px;
+
+    right: -20px;
+}
+
+
+.missao-conteudo {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+.missao-icon {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 55px;
+
+    animation: flutuar 2.5s ease-in-out infinite;
+}
+
+
+.missao h2 {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+
+    color: #ffd400;
+
+    text-shadow:
+        3px 3px 0 #8c0000;
+}
+
+
+.missao p {
+    margin-top: 12px;
+
+    line-height: 1.7;
+
+    font-size: 17px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES
+   ========================================================= */
+
+.informacoes {
+    padding: 45px 20px;
+
+    background: #0c2148;
+}
+
+
+.info {
+    max-width: 550px;
+
+    margin: 15px auto;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid rgba(255, 212, 0, 0.15);
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.info:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255, 255, 255, 0.13);
+}
+
+
+.info span {
+    min-width: 45px;
+
+    font-size: 32px;
+}
+
+
+.info strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #ffd400;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.info p {
+    font-size: 16px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BOTÃO LOCALIZAÇÃO
+   ========================================================= */
+
+.btn-localizacao {
+    display: block;
+
+    width: fit-content;
+
+    margin: 25px auto 0;
+
+    padding: 15px 25px;
+
+    background: #ffd400;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 5px 0 #a87900;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.btn-localizacao:hover {
+    transform: translateY(3px);
+
+    box-shadow:
+        0 2px 0 #a87900;
+}
+
+
+/* =========================================================
    CONTADOR
-========================================== */
+   ========================================================= */
+
+.contador {
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #050d20,
+            #020711
+        );
+}
+
+
+.contador h2 {
+    margin-bottom: 25px;
+
+    color: #ffd400;
+
+    font-size: 25px;
+
+    text-shadow:
+        2px 2px 0 #8c0000;
+}
+
+
+/* =========================================================
+   TEMPO
+   ========================================================= */
 
 .tempo {
     display: flex;
+
     justify-content: center;
-    gap: 10px;
+
+    align-items: center;
+
+    gap: 12px;
+
     margin-top: 25px;
+
     flex-wrap: wrap;
 }
 
+
 .tempo div {
-    width: 75px;
-    padding: 12px 5px;
+    width: 80px;
+
+    padding: 13px 5px;
 
     background: #d71920;
 
@@ -20,25 +582,333 @@
 
     border-radius: 10px;
 
-    box-shadow: 0 5px 0 #8c0000;
+    box-shadow:
+        0 6px 0 #8c0000;
+
+    transition:
+        transform 0.2s ease;
 }
+
+
+.tempo div:hover {
+    transform: translateY(-4px);
+}
+
 
 .tempo strong {
     display: block;
 
-    font-size: 28px;
+    font-size: 29px;
 
-    color: white;
+    line-height: 1;
+
+    color: #ffffff;
 }
+
 
 .tempo span {
     display: block;
 
-    margin-top: 4px;
+    margin-top: 7px;
 
     font-size: 10px;
 
-    font-weight: bold;
+    font-weight: 900;
 
     color: #ffd400;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #020711;
+
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ANIMAÇÕES
+   ========================================================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes nomeEntrando {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+@keyframes pulso {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes flutuar {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+
+    h1 {
+        font-size: 48px;
+    }
+
+
+    .logo {
+        font-size: 30px;
+    }
+
+
+    .mensagem {
+        max-width: 420px;
+
+        font-size: 16px;
+    }
+
+
+    .missao h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100svh;
+
+        padding: 30px 18px;
+    }
+
+
+    .logo {
+        font-size: 25px;
+
+        text-shadow:
+            3px 3px 0 #d00000;
+    }
+
+
+    .chamada {
+        font-size: 15px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .idade {
+        width: 110px;
+
+        height: 110px;
+
+        font-size: 62px;
+    }
+
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+
+    .mensagem {
+        max-width: 330px;
+
+        font-size: 15px;
+    }
+
+
+    .btn-confirmar {
+        width: 100%;
+
+        max-width: 320px;
+
+        padding: 17px 20px;
+
+        font-size: 15px;
+    }
+
+
+    .missao {
+        padding: 50px 20px;
+    }
+
+
+    .missao h2 {
+        font-size: 24px;
+    }
+
+
+    .missao p {
+        font-size: 15px;
+    }
+
+
+    .informacoes {
+        padding: 35px 15px;
+    }
+
+
+    .info {
+        padding: 16px;
+
+        gap: 15px;
+    }
+
+
+    .info span {
+        font-size: 27px;
+    }
+
+
+    .contador {
+        padding: 45px 15px;
+    }
+
+
+    .contador h2 {
+        font-size: 21px;
+    }
+
+
+    .tempo {
+        gap: 8px;
+    }
+
+
+    .tempo div {
+        width: 70px;
+
+        padding: 11px 4px;
+    }
+
+
+    .tempo strong {
+        font-size: 24px;
+    }
+
+
+    .tempo span {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES MUITO PEQUENOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+    .logo {
+        font-size: 22px;
+    }
+
+
+    .idade {
+        width: 95px;
+
+        height: 95px;
+
+        font-size: 55px;
+    }
+
+
+    .tempo {
+        gap: 5px;
+    }
+
+
+    .tempo div {
+        width: 64px;
+    }
+
+
+    .tempo strong {
+        font-size: 21px;
+    }
+
 }
