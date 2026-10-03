@@ -2,48 +2,103 @@
 <html lang="pt-BR">
 
 <head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES
+    ====================================================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bernardo 4 Anos | Vingadores LEGO</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Convite especial para o aniversário de 4 anos do Bernardo - Tema Vingadores LEGO."
+    >
+
+    <meta
+        name="theme-color"
+        content="#07152f"
+    >
+
+    <title>
+        Bernardo 4 Anos | Vingadores LEGO
+    </title>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
+    <!-- =====================================================
+         CONVITE
+    ====================================================== -->
+
     <main class="convite">
 
-        <section class="hero">
+
+        <!-- =================================================
+             HERO / TELA PRINCIPAL
+        ================================================== -->
+
+        <section
+            class="hero"
+            id="inicio"
+        >
 
             <div class="logo">
                 VINGADORES
             </div>
 
+
             <p class="chamada">
                 UMA NOVA AVENTURA VAI COMEÇAR!
             </p>
+
 
             <h1>
                 BERNARDO
             </h1>
 
+
             <div class="idade">
                 4
             </div>
+
 
             <h2>
                 ANOS
             </h2>
 
+
             <p class="mensagem">
-                Os Vingadores estão reunindo seus heróis
-                para uma missão muito especial!
+
+                Os Vingadores estão reunindo
+                seus melhores heróis para uma
+                missão muito especial!
+
             </p>
+
 
             <button
                 class="btn-confirmar"
-                onclick="confirmarPresenca()">
+                type="button"
+                onclick="confirmarPresenca()"
+            >
 
                 ⚡ CONFIRMAR PRESENÇA
 
@@ -52,62 +107,204 @@
         </section>
 
 
-        <section class="informacoes">
 
-            <div class="info">
+        <!-- =================================================
+             SEÇÃO DA MISSÃO
+        ================================================== -->
 
-                <span>📅</span>
+        <section
+            class="missao"
+            id="missao"
+        >
 
-                <div>
-                    <strong>DATA</strong>
-                    <p>12 de dezembro</p>
-                </div>
-
-            </div>
-
-
-            <div class="info">
-
-                <span>🕐</span>
-
-                <div>
-                    <strong>HORÁRIO</strong>
-                    <p>12:00</p>
-                </div>
-
-            </div>
+            <div class="missao-conteudo">
 
 
-            <div class="info">
+                <span class="missao-icon">
+                    🦸
+                </span>
 
-                <span>📍</span>
 
-                <div>
-                    <strong>LOCAL</strong>
-                    <p>Minha casa</p>
-                </div>
+                <h2>
+                    UMA MISSÃO ESPECIAL!
+                </h2>
+
+
+                <p>
+
+                    Os Vingadores precisam reunir
+                    seus melhores heróis para
+                    comemorar uma data muito especial.
+
+                </p>
+
+
+                <p>
+
+                    E você foi convocado
+                    para essa missão!
+
+                </p>
 
             </div>
 
         </section>
 
 
-        <section class="contador">
+
+        <!-- =================================================
+             INFORMAÇÕES DA FESTA
+        ================================================== -->
+
+        <section
+            class="informacoes"
+            id="informacoes"
+        >
+
+
+            <!-- DATA -->
+
+            <div class="info">
+
+                <span>
+                    📅
+                </span>
+
+                <div>
+
+                    <strong>
+                        DATA
+                    </strong>
+
+                    <p>
+                        12 de dezembro de 2026
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HORÁRIO -->
+
+            <div class="info">
+
+                <span>
+                    🕐
+                </span>
+
+                <div>
+
+                    <strong>
+                        HORÁRIO
+                    </strong>
+
+                    <p>
+                        12:00
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOCAL -->
+
+            <div class="info">
+
+                <span>
+                    📍
+                </span>
+
+                <div>
+
+                    <strong>
+                        LOCAL
+                    </strong>
+
+                    <p>
+                        Minha casa
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOTÃO MAPA -->
+
+            <a
+                class="btn-localizacao"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                📍 VER LOCALIZAÇÃO
+
+            </a>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTAGEM REGRESSIVA
+        ================================================== -->
+
+        <section
+            class="contador"
+            id="contador"
+        >
 
             <h2>
                 ⏳ A MISSÃO COMEÇA EM
             </h2>
 
+
             <div id="countdown">
+
                 Carregando...
+
             </div>
 
         </section>
 
 
+
+        <!-- =================================================
+             RODAPÉ
+        ================================================== -->
+
+        <footer>
+
+            <p>
+                🦸 Bernardo • 4 anos
+            </p>
+
+            <p>
+                Uma aventura inesquecível está chegando!
+            </p>
+
+        </footer>
+
+
     </main>
 
-    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="script.js"
+    ></script>
+
 
 </body>
 
